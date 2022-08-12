@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="bg-gradient-to-r from-indigo-200/50 via-red-200/50 to-yellow-100/50">
+    <nav class="flex justify-between items-center p-8">
+      <div>
+      <svg viewBox="0 0 248 31" class="text-slate-900 w-auto h-5"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z" fill="#38bdf8"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M76.546 12.825h-4.453v8.567c0 2.285 1.508 2.249 4.453 2.106v3.463c-5.962.714-8.332-.928-8.332-5.569v-8.567H64.91V9.112h3.304V4.318l3.879-1.143v5.937h4.453v3.713zM93.52 9.112h3.878v17.849h-3.878v-2.57c-1.365 1.891-3.484 3.034-6.285 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.285 2.999V9.112zm-5.674 14.636c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm16.016-17.313c-1.364 0-2.477-1.142-2.477-2.463a2.475 2.475 0 012.477-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.879v17.849h-3.879zm8.368 0V.9h3.878v26.06h-3.878zm29.053-17.849h4.094l-5.638 17.849h-3.807l-3.735-12.03-3.771 12.03h-3.806l-5.639-17.849h4.094l3.484 12.315 3.771-12.315h3.699l3.734 12.315 3.52-12.315zm8.906-2.677c-1.365 0-2.478-1.142-2.478-2.463a2.475 2.475 0 012.478-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.878v17.849h-3.878zm17.812-18.313c4.022 0 6.895 2.713 6.895 7.354V26.96h-3.878V16.394c0-2.713-1.58-4.14-4.022-4.14-2.55 0-4.561 1.499-4.561 5.14v9.567h-3.879V9.112h3.879v2.285c1.185-1.856 3.124-2.749 5.566-2.749zm25.282-6.675h3.879V26.96h-3.879v-2.57c-1.364 1.892-3.483 3.034-6.284 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.284 2.999V1.973zm-5.674 21.775c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm22.553 3.677c-5.423 0-9.481-4.105-9.481-9.389 0-5.318 4.058-9.388 9.481-9.388 3.519 0 6.572 1.82 8.008 4.605l-3.34 1.928c-.79-1.678-2.549-2.749-4.704-2.749-3.16 0-5.566 2.392-5.566 5.604 0 3.213 2.406 5.605 5.566 5.605 2.155 0 3.914-1.107 4.776-2.749l3.34 1.892c-1.508 2.82-4.561 4.64-8.08 4.64zm14.472-13.387c0 3.249 9.661 1.285 9.661 7.89 0 3.57-3.125 5.497-7.003 5.497-3.591 0-6.177-1.607-7.326-4.177l3.34-1.927c.574 1.606 2.011 2.57 3.986 2.57 1.724 0 3.052-.571 3.052-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.909-5.462 6.572-5.462 2.945 0 5.387 1.357 6.644 3.713l-3.268 1.82c-.647-1.392-1.904-2.035-3.376-2.035-1.401 0-2.622.607-2.622 1.892zm16.556 0c0 3.249 9.66 1.285 9.66 7.89 0 3.57-3.124 5.497-7.003 5.497-3.591 0-6.176-1.607-7.326-4.177l3.34-1.927c.575 1.606 2.011 2.57 3.986 2.57 1.724 0 3.053-.571 3.053-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.908-5.462 6.572-5.462 2.944 0 5.386 1.357 6.643 3.713l-3.268 1.82c-.646-1.392-1.903-2.035-3.375-2.035-1.401 0-2.622.607-2.622 1.892z" fill="currentColor"></path></svg>
+      </div>
+      <div class="flex">
+        <div class="border-r border-gray-200 space-x-6 pr-6 text-sm font-semibold text-slate-600">
+          <a class="hover:text-cyan-500 transition-colors hover:duration-300" href="">Docs</a>
+          <a class="hover:text-cyan-500 transition-colors hover:duration-300" href="">Components</a>
+          <a class="hover:text-cyan-500 transition-colors hover:duration-300" href="">Blog</a>
+        </div>
+        <div class="pl-6 flex space-x-4 text-slate-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-slate-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <div class="max-w-5xl mx-auto pt-24 text-center space-y-8">
+      <h1 class="text-6xl font-extrabold">Rapidly build modern websites without ever leaving your HTML.</h1>
+      <p class="text-lg text-slate-500 font-light px-36">A utility-first CSS framework packed with classes like <span class="text-cyan-500 font-mono">flex</span>, <span class="text-cyan-500 font-mono">pt-4</span>, <span class="text-cyan-500 font-mono">text-center</span> and <span class="text-cyan-500 font-mono">rotate-90</span> that can be composed to build any design, directly in your markup.</p>
+      <div class="flex justify-center items-center space-x-6 mx-auto">
+        <a class="px-6 py-3 border border-slate-900 hover:border-slate-700 text-white bg-slate-900 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors duration-200" href="">Get started</a>
+        <form action="#">
+          <div class="relative">
+            <input type="text" placeholder="Quick search..." class="font-light bg-white text-slate-500 border border-gray-300 placeholder-gray-400 w-72 rounded-lg text-sm px-12 py-3 focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500">
+            <div class="absolute left-4 top-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div class="absolute right-4 top-3 flex items-center text-sm space-x-1">
+              <span title="Command" class="no-underline text-slate-300 dark:text-slate-500">⌘</span>
+              <span class="font-semibold text-slate-400">K</span>
+            </kbd>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="pt-24 flex justify-center items-center">
+      <div class="flex-shrink-0 border bg-white rounded-lg flex max-w-2xl shadow-xl z-10 -mr-20">
+        <img src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg" class="rounded-l-lg w-44 h-auto">
+        <div class="flex flex-col text-left px-10">
+          <span class="py-8 text-lg text-slate-800 font-medium">“Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.”</span>
+          <span class="text-cyan-500 text-base pb-1">Sarah Dayan</span>
+          <span class="text-base text-slate-600">Staff Engineer, Algolia</span>
+        </div>
+      </div>
+      <div class="bg-slate-800 rounded-2xl p-4 max-w-2xl -mb-16 shadow-xl">
+        <div class="flex text-gray-600 space-x-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <hr class="-mx-4 border-gray-600 mt-3">
+        <div class="overflow-auto">
+          <pre class="font-mono text-left text-gray-600 text-md">
+            <code>
+<span class="select-none">  1   </span>&lt;<span class="text-pink-400">figure</span> <span class="text-sky-100">class</span><span class="text-sky-300">="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800"</span>&gt;
+<span class="select-none">  2      </span>&lt;<span class="text-pink-400">img</span> <span class="text-sky-100">class</span><span class="text-sky-300">="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512"</span>&gt;
+<span class="select-none">  3      </span>&lt;<span class="text-pink-400">div</span> <span class="text-sky-100">class</span><span class="text-sky-300">="pt-6 md:p-8 text-center md:text-left space-y-4"</span>&gt;
+<span class="select-none">  4        </span>&lt;<span class="text-pink-400">blockquote</span>&gt;
+<span class="select-none">  5         </span>&lt;<span class="text-pink-400">p</span> <span class="text-sky-100">class</span><span class="text-sky-300">="text-lg font-medium"</span>&gt;
+<span class="select-none">  6         </span><span class="text-white">“Tailwind CSS is the only framework that I've seen scale
+<span class="text-gray-600 select-none">  7            </span>on large teams. It’s easy to customize, adapts to any design,
+<span class="text-gray-600 select-none">  8            </span>and the build size is tiny.”</span>
+<span class="select-none">  9          </span>&lt;<span class="text-pink-400">/p</span>&gt;
+<span class="select-none">  10      </span>&lt;<span class="text-pink-400">/blockquote</span>&gt;
+<span class="select-none">  11      </span>&lt;<span class="text-pink-400">figcaption</span> <span class="text-sky-100">class</span><span class="text-sky-300">="font-medium"</span>&gt;
+<span class="select-none">  12        </span>&lt;<span class="text-pink-400">div</span> <span class="text-sky-100">class</span><span class="text-sky-300">="text-sky-500 dark:text-sky-400"</span>&gt;
+<span class="select-none">  13        </span><span class="text-white">Sarah Dayan</span>
+<span class="select-none">  14        </span>&lt;<span class="text-pink-400">/div</span>&gt;
+<span class="select-none">  15        </span>&lt;<span class="text-pink-400">div</span> <span class="text-sky-100">class</span><span class="text-sky-300">="text-slate-700 dark:text-slate-500"</span>&gt;
+<span class="select-none">  16        </span><span class="text-white">Staff Engineer, Algolia</span>
+<span class="select-none">  17         </span>&lt;<span class="text-pink-400">/div</span>&gt;
+<span class="select-none">  18      </span>&lt;<span class="text-pink-400">/figcaption</span>&gt;
+<span class="select-none">  19    </span>&lt;<span class="text-pink-400">/div</span>&gt;
+<span class="select-none">  20   </span>&lt;<span class="text-pink-400">/figure</span>&gt;
+<span class="select-none">  21            </span></code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-5xl mx-auto pt-24 text-center space-y-8 mt-20">
+    <h2 class="text-5xl font-extrabold">“Best practices” don’t actually work.</h2>
+    <p class="text-lg text-slate-500 font-light px-36">I’ve written <span class="text-cyan-500 font-semibold">a few thousand words</span> on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
+    <div class="text-base text-slate-600 flex justify-center space-x-4">
+      <img src="https://tailwindcss.com/_next/static/media/adam.87b7f7dc7e16987ddbf37dd55b1ff705.jpg" class="rounded-full w-14 h-auto">
+      <div class="flex flex-col text-left py-1">
+        <span class="font-semibold text-slate-800">Adam Wathan</span>
+        <span class="font-light text-sm">Creator of Tailwind CSS</span>
+      </div>
+    </div>
+  </div>
+  <div class="relative">
+    <div class="grid grid-cols-3 px-20 mt-20 gap-6 max-w-7xl mx-auto justify-items-stretch max-h-[33rem] overflow-hidden">
+      <ul class="space-y-6">
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1344410501309030403/L2rNpO6h_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Ryan Florence</span>
+              <span class="font-light text-sm">Remix & React Training</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">I feel like an idiot for not using Tailwind CSS until now.</span>
+        </li>
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1450115233205272576/CFTTK-0I_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Guillermo Rauch</span>
+              <span class="font-light text-sm">Vercel</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tailwind CSS.</span>
+        </li>
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://tailwindcss.com/_next/static/media/sara-vieira.53f08a9bc2787e4ee05e4678577a05fe.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Sara Vieira</span>
+              <span class="font-light text-sm">CodeSandbox</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.</span>
+        </li>
+      </ul>
+      <ul class="space-y-6">
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1537114604278530048/FMrBa87o_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Debbie O'Brien</span>
+              <span class="font-light text-sm">Senior Program Manager at Microsoft</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">Have been working with CSS for over 10 years and Tailwind just makes my life easier. It is still CSS and you use flex, grid, etc. but just quicker to write and maintain.</span>
+        </li>
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1196645005378478080/79mVokZP_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Ben Furfie</span>
+              <span class="font-light text-sm">Developer</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">I’ve been writing CSS for over 20 years, and up until 2017, the way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realise semantic CSS was a 20 year mistake.</span>
+        </li>
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Didier Catz</span>
+              <span class="font-light text-sm">Co-Founder @StyptApp</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">Tailwind makes writing code feel like I’m using a design tool.</span>
+        </li>
+      </ul>
+      <ul class="space-y-6">
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1529905780542959616/Ibwrp7VJ_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Kent C. Dodds</span>
+              <span class="font-light text-sm">Developer and Educator</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">Skip to the end. Use @tailwindcss.</span>
+        </li>
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1329475394714537986/MXGt0d_h_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Shruti Balasa</span>
+              <span class="font-light text-sm">Full Stack Web Developer & Tech Educator</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">I was bad at front-end until I discovered Tailwind CSS. I have learnt a lot more about design and CSS itself after I started working with Tailwind. Creating web pages is 5x faster now.</span>
+        </li>
+        <li class="flex flex-col bg-slate-50 rounded-xl p-6 h-fit">
+          <div class="text-base text-slate-600 flex space-x-4">
+            <img src="https://pbs.twimg.com/profile_images/1441044961957343232/Sl1U4tSw_400x400.jpg" class="rounded-full w-14 h-14">
+            <div class="flex flex-col text-left py-1">
+              <span class="font-semibold text-slate-800">Pieter Levels</span>
+              <span class="font-light text-sm">Maker</span>
+            </div>
+          </div>
+          <span class="font-light text-sm py-3 mt-3 leading-6 tracking-wide">I don't use it but if I would use something I'd use Tailwind!</span>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-gradient-to-t from-white absolute inset-x-0 bottom-0 pt-32 pb-8 pointer-events-none text-center">
+      <button class="cursor-pointer pointer-events-auto px-6 py-3 border border-slate-900 hover:border-slate-700 text-white bg-slate-900 rounded-lg text-sm font-medium hover:bg-slate-700 transition-colors duration-200">Show more&hellip;</button>
+    </div>
+  </div>
+</body>
+<footer class="mt-20">
+  <div class="grid grid-cols-4 max-w-7xl mx-auto text-sm text-left justify-items-center">
+    <div class="leading-6 tracking-wide py-4">
+      <h3 class="font-medium pb-4">Getting Started</h3>
+      <ul class="space-y-1 text-gray-400 font-light">
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Installation</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Editor Setup</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Using with Preprocessors</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Optimizing for Production</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Browser Support</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Upgrade Guide</a></li>
+      </ul>
+    </div>
+    <div class="leading-6 tracking-wide py-4">
+      <h3 class="font-medium pb-4">Core Concepts</h3>
+      <ul class="space-y-1 text-gray-400 font-light">
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Utility-First Fundamentals</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Handling Hover, Focus, and Other States</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Responsive Design</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Dark Mode</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Reusing Styles</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Adding Custom Styles</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Functions & Directives</a></li>
+      </ul>
+    </div>
+    <div class="leading-6 tracking-wide py-4">
+      <h3 class="font-medium pb-4">Customization</h3>
+      <ul class="space-y-1 text-gray-400 font-light">
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Configuration</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Content Configuration</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Theme Configuration</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Customizing Screens</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Customizing Colors</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Customizing Spacing</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Plugins</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Presets</a></li>
+      </ul>
+    </div>
+    <div class="leading-6 tracking-wide py-4">
+      <h3 class="font-medium pb-4">Community</h3>
+      <ul class="space-y-1 text-gray-400 font-light">
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">GitHub</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Discord</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">Twitter</a></li>
+        <li class="hover:text-slate-800 hover:cursor-pointer"><a href="">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+</footer>
+</html>
